@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
-const Search = ({cartItem}) => {
+const Search = ({ cartItem }) => {
   window.addEventListener("scroll", function () {
     const search = document.querySelector(".search");
     search.classList.toggle("active", this.window.scrollY > 100);
@@ -24,11 +24,7 @@ const Search = ({cartItem}) => {
             <div className="cart">
               <Link to="/cart">
                 <i className="fa fa-shopping-bag icon-circle"></i>
-                <span>{cartItem.length ===0? "":cartItem.length}</span>
-              </Link>
-              <Link to="/cart">
-                <i className="fa fa-shopping-bag icon-circle"></i>
-                <span>{cartItem.length ===0? "":cartItem.length}</span>
+                <span>{cartItem.length === 0 ? "" : cartItem.length}</span>
               </Link>
             </div>
           </div>
